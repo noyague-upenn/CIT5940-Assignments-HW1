@@ -12,12 +12,27 @@ Regarding snippet B, it depends on the List we are looking at. If we are in the 
 
 # Part 2:
 ## What are the Big O and Big Ω times for snippets C and D?
+Snipped C:
+- Big O: n*m because in the worst case the element is the last one (or not found) and will have to loop m (columns) times each n (rows).
+- Big Ω: best case scenario the target it at first position so it will change boolean variable found to true and break both loops.
 
+Snipped D:
+- Big O: it will always loop n*m, no matter if the element is found or not. The logic just prevents from saving twice. So it will loop m (columns) times each n (rows).
+- Big Ω: same as Big O. It will be n*m because even if the target is found, it will continue looping.
 
 ## When measuring actual runtime, does one of the snippets run faster than the other? In what situations? Why do you think this is the case?
+Using getGridOne():
+- Snippet C runs faster than Snippet D.
+- The reason is that this test case has the result in the first element so it is basically testing Big Ω.
+- This is consistent with our previous analysis: this is because snippet C just do one loop and its done while Snippet D is iterating everything.
+
+Using getGridOne():
+- Snippet C and Snippet D takes similar amount of ms.
+- The reason is that this test case has the result in the last element so it is basically testing Big O.
+- This is also consistent with our previous analysis: both will perform similar because they have to iterate all the grid.
 
 ## What else do you notice about the reported runtime? Is it 100% consistent every time you run it?
-
+I have noticed runtime is similar but it is not exactly the same on each run. Honestly I don't know why, but since computer is performing a lot of stuff under the hood I guess things mostly related to compilation and memory allocation may vary between each time we run the program. In Java, the language handles this and more stuff (like garbage collection), so we can't control exactly how is doing it and have a better runtime performance control. Conditions may be slightly different between each time we press run. 
 
 # Part 3:
 ## Before you make any changes, explain whether you think a LinkedList or an ArrayList makes more sense in this instance. Which do you think will be faster? Why?
