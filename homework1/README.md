@@ -6,7 +6,9 @@ PennKey (e.g., taliem):
 
 # Part 1:
 ## Are Alicia and Lloyd both wrong, or perhaps both right? Is only one of them correct? Why?
+Regarding snippet A, Alicia is right: is O(n). For a list, size is O(1) but get depends on n. In this case, we are doing get(middle) so it  should have to traverse the list to reach middle. The bigger n, more steps are required.
 
+Regarding snippet B, it depends on the List we are looking at. If we are in the Java world, Alicia is right again: is O(1). In Java get and remove will take O(1) if you want to get the first or last element because the data structure will save the head and tail. If we are not in Java and only have the head, remove or get from the last element will take O(n).
 
 # Part 2:
 ## What are the Big O and Big Ω times for snippets C and D?
