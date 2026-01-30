@@ -6,7 +6,6 @@ public class FindFirstInstance {
         int[] result = {-1, -1};
         boolean found = false; // flag to control the outer loop
 
-
         for (int r = 0; r < grid.length; r++) {
             for (int c = 0; c < grid[r].length; c++) {
                 
