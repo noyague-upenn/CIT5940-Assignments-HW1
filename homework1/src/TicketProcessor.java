@@ -5,7 +5,27 @@ import java.util.List;
 
 public class TicketProcessor {
     public static void main(String[] args) {
+
         processTicketsLinkedList();
+
+        /* For the iterations
+
+        double[] res = new double[10];
+        double average = 0;
+
+        for (int i = 0; i < 10; i++) {
+            long start = System.nanoTime(); // start testing runtime
+            processTicketsLinkedList();
+            long end = System.nanoTime(); // end testing runtime
+            res[i] = (end - start) / 1000000.0;
+        }
+
+        for (int i = 0; i < 10; i++) {
+            average += res[i];
+            System.out.println(res[i]);
+        }
+        System.out.println("Average: " + average / 10);
+         */
 
     }
 
@@ -14,10 +34,9 @@ public class TicketProcessor {
         LinkedList<String> ticketQueue = new LinkedList<>();
 
         // Uncomment the queue length you want to test with
-        // createShortQueue(ticketQueue);
+        createShortQueue(ticketQueue);
         // createLongQueue(ticketQueue);
 
-        
         while (!ticketQueue.isEmpty()) {
             // grab the first item in the list
             String currentTicket = ticketQueue.remove(0); 
