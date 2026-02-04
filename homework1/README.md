@@ -85,8 +85,16 @@ Theoretical time complexity is consistent with the test results. It is also cons
 
 # Part 4
 ## What are the Big O and Big Ω times for Javier's algorithm? What are the Big O and Big Ω for space use?
+Time:
+- Big O: O(nLog(n)) - Since the array is dividing after we go through all the elements, it is taking Log2(n) steps starting from n to 1. In addition, after we take the corresponding 2 arrays, we will call Merge. That function will go through all the n elements one by one either from the combined loop or the independent ones. So for each Log2(n) it will loop n times. We drop the constants and its O(nLog(n))
+- Big Ω: O(nLog(n)) - This algorithm will perform the same no matter if the array is sorted or not. It will always cut the initial ArrayList until the array is of size one, so we will have Log(n). On the other hand, it will always go through the elements to be sure they are sorted: n times.
+
+Space:
+- Big O: O(n) - This answer assumes we are in Java. An ArrayList of size n is created and the reused once and again with a smaller size because it is calling .remove() after taking each element. Then after calling merge, it is passing a reference so no more memory is needed. Then it creates a new array result so now we have 2n memory. But after the method is gone, this array disappears with Java's garbage collector. We can simplify 2n to just n
+- Big Ω: O(n) - Again the algorithm will perform the same no matter if it is sorted or not.
 
 
+*Clarification: if we were not in Java (and no Java's garbage collector), calling merge will need more memory because the arrays will accumulate.
 
 ## Write a paragraph or two in the style of a technical report (think about – how would I write this professionally if I needed to explain my findings to my manager?). 
 Your report should answer the following questions:

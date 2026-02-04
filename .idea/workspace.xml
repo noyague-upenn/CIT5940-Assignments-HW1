@@ -57,6 +57,8 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.FindFirstInstance.executor": "Run",
+    "Application.JavierMergeSort.executor": "Run",
+    "Application.MergeSort.executor": "Run",
     "Application.TicketProcessor.executor": "Run",
     "Application.TicketProcessorArray.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -80,9 +82,35 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TicketProcessor">
+  <component name="RunManager" selected="Application.MergeSort">
     <configuration name="FindFirstInstance" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="homework1.src.FindFirstInstance" />
+      <module name="CIT5940-Assignments-HW1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homework1.src.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavierMergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homework1.src.JavierMergeSort" />
+      <module name="CIT5940-Assignments-HW1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homework1.src.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MergeSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homework1.src.MergeSort" />
       <module name="CIT5940-Assignments-HW1" />
       <extension name="coverage">
         <pattern>
@@ -122,6 +150,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MergeSort" />
+        <item itemvalue="Application.JavierMergeSort" />
         <item itemvalue="Application.TicketProcessor" />
         <item itemvalue="Application.TicketProcessorArray" />
         <item itemvalue="Application.FindFirstInstance" />
@@ -144,7 +174,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1769790551279</updated>
-      <workItem from="1769790552281" duration="11527000" />
+      <workItem from="1769790552281" duration="32205000" />
     </task>
     <task id="LOCAL-00001" summary="Part 1">
       <option name="closed" value="true" />
@@ -170,7 +200,23 @@
       <option name="project" value="LOCAL" />
       <updated>1769806776046</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Part 3">
+      <option name="closed" value="true" />
+      <created>1769817276456</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1769817276456</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Part 3">
+      <option name="closed" value="true" />
+      <created>1769817279465</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1769817279465</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +248,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Part 1" />
     <MESSAGE value="Part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Part 2" />
+    <MESSAGE value="Part 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Part 3" />
   </component>
 </project>
