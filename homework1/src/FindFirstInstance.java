@@ -56,7 +56,7 @@ public class FindFirstInstance {
         long start = System.nanoTime(); // start testing runtime
 
         // uncomment one of the methods below to test it
-        //findFirstInstanceOne(grid, target);
+        // findFirstInstanceOne(grid, target);
         findFirstInstanceTwo(grid, target);
 
         long end = System.nanoTime(); // end testing runtime

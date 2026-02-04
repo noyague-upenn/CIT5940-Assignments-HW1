@@ -102,3 +102,14 @@ Your report should answer the following questions:
     * What about in actual runtime?
 * Which implementation do you suggest should be used? Are there certain situations that might call for the other approach?
 
+In summary, recursive algorithm is:
+- Time - Big O: O(nLog(n)) - For every recursive step, we are creating two arrays of half of the size, so we will take Log(n) as discussed before. In addition, for every recursive step we need to create the left and right arrays, iterating them by n/2 and n/2. That is why we are getting n times for each of the Log(n) recursive calls.  
+- Space - Big O: O(n) - We are creating two arrays of n/2 and n/2 and making the recursive call where getting a n/4 and n/4 arrays. We will divide the size by 2 until base case. If we sum the space needed n + n/2 + n/4 + ... we will approximate to 2n. We drop the constant and its O(n).
+
+Comparing runtime:
+- Javier: 0.8667375 ms
+- MergeSort: 0.2923832 ms
+
+Since Big O for both time and space complexity, the only reason to use recursive approach instead of iterative is because of runtime (iterative is 3 times recursive). The reason of this may be because of the use of a LinkedList that is a more complex data structure.
+
+I found no reasons to use iterative approach.

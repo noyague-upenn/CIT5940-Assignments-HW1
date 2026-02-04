@@ -13,6 +13,20 @@ public class MergeSort {
             input[i] = rand.nextInt(5000);
         }
 
+
+        ///*
+        // Testing runtime
+        long start = System.nanoTime(); // start testing runtime
+
+        // JavierMergeSort.mergeSort(input);
+        mergeSort(input);
+
+        long end = System.nanoTime(); // end testing runtime
+
+        System.out.println("Run time was " + (end - start) / 1000000.0 + " milliseconds." ); // print runtime
+        /*
+        // Testing correctness:
+
         int [] javierSort = JavierMergeSort.mergeSort(input);
         int[] recursiveSort = mergeSort(input);
         boolean answer = true;
@@ -24,6 +38,7 @@ public class MergeSort {
             }
         }
         System.out.println(answer);
+         */
     }
 
     public static int[] mergeSort(int[] input) {
